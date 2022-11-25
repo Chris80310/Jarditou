@@ -1,0 +1,112 @@
+body {
+
+    background: url("/FRONT/STATIQUE/HTML/projet_jarditou/assets/img/outils-jardinage-plantes.jpg") fixed no-repeat center/cover;
+
+    font-family: "Arial Black", Georgia, Times, 'Times New Roman', serif;
+    height: 100vh;
+}
+
+
+p
+
+/*couleur des paragraphes*/
+    {
+    color: greenyellow;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    font-size: 1.8em;
+    text-align: left;
+    font-family: "Arial Black", Georgia, Times, 'Times New Roman', serif;
+}
+
+article {
+    text-align: left;
+    max-width: 75%;
+    line-height: 10px;
+    word-spacing: 0px;
+}
+
+#promo {
+
+    background: url(./assets/img/promotion.jpg) center;
+    width: 100%;
+
+}
+
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+    text-align: center;
+    font-family: "Arial Black", Georgia, Times, 'Times New Roman', serif;
+    color:coral;
+}
+
+h2
+
+/*couleur des titres h2*/
+    {
+    text-transform: lowercase;
+    margin:1em;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+    text-align:left;
+    font-family: "Arial Black", Georgia, Times, 'Times New Roman', serif;
+    color: coral;
+}
+
+.introduction {
+
+    color: yellowgreen;
+
+}
+
+/* liens */
+
+.nav_liens {
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    background-color: rgba(100, 135, 25, 0.650);
+    height: 5%;
+}
+
+li a {
+
+    color: coral;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+
+}
+
+li a:hover {
+    color: red;
+}
+
+aside {
+    display: flex;
+    float: right;
+    background-color: rgba(100, 135, 25, 0.650);
+    width: 400px;
+    height: 800px;
+}
+
+
+/* page tableau */
+
+table {
+    color: greenyellow;
+    font-size: 2.5em
+}
+
+/* page formulaire */
+
+form {
+    color: antiquewhite;
+    border: solid white;
+}

@@ -1,9 +1,32 @@
+header {
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#logo {
+    width: 100%;
+}
+
+#promo {
+
+    flex: content;
+    flex-direction: left;
+}
+
+.introduction {
+
+    color: yellowgreen;
+
+}
+
 body {
 
-    background: url("/FRONT/STATIQUE/HTML/projet_jarditou/assets/img/outils-jardinage-plantes.jpg") fixed no-repeat center/cover;
+    background: url("/FRONT/STATIQUE/HTML/Jarditou/projet_jarditou/assets/img/outils-jardinage-plantes.jpg") fixed no-repeat center/cover;
 
     font-family: "Arial Black", Georgia, Times, 'Times New Roman', serif;
     height: 100vh;
+    margin: 0px;
 }
 
 
@@ -19,12 +42,24 @@ p
     font-family: "Arial Black", Georgia, Times, 'Times New Roman', serif;
 }
 
+hr {
+    color: coral;
+}
+
 article {
     text-align: left;
     max-width: 75%;
-    line-height: 10px;
+    line-height: 2.5em;
     word-spacing: 0px;
 }
+
+/*aaa=Section+Aside*/
+#aaa {
+    display: flex;
+    margin: 10px;
+
+}
+
 
 #promo {
 
@@ -40,7 +75,7 @@ h1 {
     font-size: 2.5em;
     text-align: center;
     font-family: "Arial Black", Georgia, Times, 'Times New Roman', serif;
-    color:coral;
+    color: coral;
 }
 
 h2
@@ -48,18 +83,12 @@ h2
 /*couleur des titres h2*/
     {
     text-transform: lowercase;
-    margin:1em;
+    margin: 1em;
     letter-spacing: 2px;
     font-size: 2.5em;
-    text-align:left;
+    text-align: left;
     font-family: "Arial Black", Georgia, Times, 'Times New Roman', serif;
     color: coral;
-}
-
-.introduction {
-
-    color: yellowgreen;
-
 }
 
 /* liens */
@@ -92,21 +121,129 @@ aside {
     display: flex;
     float: right;
     background-color: rgba(100, 135, 25, 0.650);
-    width: 400px;
-    height: 800px;
+    width: 300px;
+    height: 600px;
 }
 
 
 /* page tableau */
 
 table {
+
+
+    display: flex table-column;
+    width: 75%;
+    border-collapse: collapse;
     color: greenyellow;
-    font-size: 2.5em
+    font-size: 2.5em;
+    text-align: center;
+    border: none;
+}
+
+
+
+td {
+    display: flex row;
+    color: coral;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(172, 255, 47, 0.281);
+    color: greenyellow;
+
+}
+
+#photo {
+    background-color: rgba(100, 135, 25, 0.650);
+
 }
 
 /* page formulaire */
 
-form {
-    color: antiquewhite;
-    border: solid white;
+#formulaire {
+
+    display: flex;
+    color: greenyellow;
+    width: 75%;
+    font-size: 2.5em;
+}
+
+#cgu {
+
+    display: inline-flex;
+    color: greenyellow;
+    max-width: 100%;
+    font-size: 2.5em;
+}
+
+.bouton_cgu {
+    display:flex;
+    justify-content: space-around;
+}
+
+.encadrement {
+    border: none;
+}
+
+input {
+    background-color: whitesmoke;
+    width: 25em;
+    height: 2.5em;
+    border:solid 2px;
+    border-color: coral
+
+}
+
+input:hover {
+    color: red;
+}
+
+#sujet {
+    width: 20em;
+    height: 2.5em;
+}
+
+
+@media screen and (max-width:768px) {
+
+    p,
+    H1,
+    H2 {
+        text-align: center;
+    }
+
+    aside {
+        display: none;
+    }
+
+    article {
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    table {
+        justify-content: center;
+        font-size: 35px;
+    }
+
+    .nav_liens {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #promo {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    #formulaire {
+
+        display: inline;
+        border: solid none;
+        width: 100%;
+        font-size: 1.75em;
+    }
 }

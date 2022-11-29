@@ -2,35 +2,34 @@
     <!DOCTYPE html>
     <html lang="fr">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/FRONT/STATIQUE/HTML/projet_jarditou/css/style.css">
+    <link rel="stylesheet" href="/FRONT/STATIQUE/HTML/Jarditou/projet_jarditou/css/style.css">
     <title>Contact</title>
 </head>
 
 <body>
 
     <header>
-        <img src="assets/img/jarditou_logo.jpg" alt="" width="600" height="200">
-        <br>
-        <p>La qualité depuis 70 ans</p>
+
+        <img src="./assets/img/jarditou_logo2.png" id="logo" alt="logo jarditou" title="logo jarditou">
+
+        <p class="introduction">La qualité depuis 70 ans</p>
 
     </header>
-
     <nav>
 
-        <ul>
-
-            <li><a href="../projet_jarditou/index.html">Acceuil</a></li>
+        <ul class="nav_liens">
+            <li><a href="../projet_jarditou/index2.html">Accueil</a></li>
             <li><a href="../projet_jarditou/tableau.html">Tableau</a></li>
             <li><a href="../projet_jarditou/contact.html">Contact</a></li>
-
         </ul>
 
     </nav>
 
-    <img src="assets/img/promotion.jpg" alt="jarditou_logo">
-    <br>
+    <nav>
+        <img src="./assets/img/promotion.jpg" alt="promo" id="promo">
+    </nav>
 
-    <br><br>
+    <br><br><br>
 
     <section>
 
@@ -39,8 +38,8 @@
 
         <p>*Ces zones sont obligatoires</p>
 
-        <form action="">
-            <fieldset>
+        <form id="formulaire">
+            <fieldset class="encadrement">
 
                 <legend>Vos coordonnées</legend>
                 <label for="nom"> Votre nom*: </label><input type="text" name="nom" id="nom">
@@ -61,24 +60,25 @@
                 </div>
 
                 <br>
-
-                <label for="date">Date de naissance:</label><input type="date" name="ddn" id="date">
-                <br>
-                <label for="cp">Code postal*: </label><input type="text" name="code postal" id="cp">
-                <br>
-                <label for="adresse">Adresse: </label><input type="text" name="adresse" id="adresse">
-                <br>
-                <label for="ville">Ville: </label><input type="text" name="ville" id="ville">
-                <br>
-                <label for="email">Email*: </label><input type="email" name="email" id="email"
-                    placeholder="Contact@exemple.com.">
+                <section>
+                    <label for="date">Date de naissance:</label><input type="date" name="ddn" id="date">
+                    <br>
+                    <label for="cp">Code postal*: </label><input type="text" name="code postal" id="cp">
+                    <br>
+                    <label for="adresse">Adresse: </label><input type="text" name="adresse" id="adresse">
+                    <br>
+                    <label for="ville">Ville: </label><input type="text" name="ville" id="ville">
+                    <br>
+                    <label for="email">Email*: </label><input type="email" name="email" id="email"
+                        placeholder="Contact@exemple.com.">
+                </section>
 
 
             </fieldset>
-            <fieldset>
+            <fieldset class="encadrement">
                 <legend>Votre demande</legend>
                 <div>Sujet*:
-                    <label for="sujet"></label>
+                    <label for="sujet" id="sujet"></label>
                     <select id="sujet">
                         <option value="sujet">Veuillez séléctionner un sujet</option>
                         <option value="question">Question sur un produit</option>
@@ -87,7 +87,7 @@
                     </select>
                     <br>
                     <label>Votre question*:</label>
-                    <textarea name="commentaire" rows="5" cols="50" placeholder="Votre question ici"></textarea>
+                    <textarea name="commentaire" rows="10" cols="50" placeholder="Votre question ici"></textarea>
 
 
 
@@ -103,21 +103,16 @@
 
     <br>
 
-    <aside>
-
-    </aside>
-
     <footer>
 
-        <div>
-
+        <div id="cgu">
             <input type="checkbox" name="cgu" value="" id="message">
             <label>*J'accepte le traitement informatique de ce formulaire</label>
-            <br><br>
-
         </div>
 
-        <div>
+        <br><br>
+
+        <div class="bouton_cgu">
             <input type="submit" value="Envoyer">
             <input type="reset" value="Annuler">
         </div>
@@ -127,12 +122,10 @@
 
         <nav>
 
-            <ul>
-
+            <ul class="nav_liens">
                 <li><a href="#">Mentions légales</a></li>
                 <li><a href="#">Horaires</a></li>
                 <li><a href="#">Plan du site</a></li>
-
             </ul>
 
         </nav>

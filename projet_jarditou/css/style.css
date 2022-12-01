@@ -5,7 +5,7 @@ header {
 }
 
 #logo {
-    width: 100%;
+    width: 50%;
 }
 
 #promo {
@@ -42,13 +42,21 @@ p
     font-family: "Arial Black", Georgia, Times, 'Times New Roman', serif;
 }
 
+.large {
+    margin-bottom: 50px;
+}
+
 hr {
+    color: coral;
+}
+
+u {
     color: coral;
 }
 
 article {
     text-align: left;
-    max-width: 75%;
+    max-width: 100%;
     line-height: 2.5em;
     word-spacing: 0px;
 }
@@ -56,8 +64,13 @@ article {
 /*aaa=Section+Aside*/
 #aaa {
     display: flex;
+    justify-content: space-between;
     margin: 10px;
 
+}
+
+section {
+    width: 70%;
 }
 
 
@@ -83,10 +96,9 @@ h2
 /*couleur des titres h2*/
     {
     text-transform: lowercase;
-    margin: 1em;
     letter-spacing: 2px;
     font-size: 2.5em;
-    text-align: left;
+    text-align: center;
     font-family: "Arial Black", Georgia, Times, 'Times New Roman', serif;
     color: coral;
 }
@@ -118,19 +130,16 @@ li a:hover {
 }
 
 aside {
-    display: flex;
-    float: right;
+
     background-color: rgba(100, 135, 25, 0.650);
-    width: 300px;
-    height: 600px;
+    width: 25%;
 }
+
 
 
 /* page tableau */
 
 table {
-
-
     display: flex table-column;
     width: 75%;
     border-collapse: collapse;
@@ -213,6 +222,11 @@ input:hover {
         font-size: 1.75em;
     }
 
+    section {
+        width: 100%;
+        text-align: center;
+    }
+
     aside {
         display: none;
     }
@@ -243,7 +257,13 @@ input:hover {
     #formulaire {
 
         display: inline;
+        text-align: left;
         border: solid none;
         width: 100%;
+        font-size: 1.75em;
     }
+    #azerty{
+        font-size: 0.75em;
+    }
+
 }

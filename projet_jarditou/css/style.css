@@ -177,7 +177,7 @@ tr:nth-child(even) {
 }
 
 .bouton_cgu {
-    display:flex;
+    display: flex;
     justify-content: space-around;
 }
 
@@ -189,9 +189,8 @@ input {
     background-color: whitesmoke;
     width: 25em;
     height: 2.5em;
-    border:solid 2px;
+    border: solid 2px;
     border-color: coral
-
 }
 
 input:hover {
@@ -208,8 +207,10 @@ input:hover {
 
     p,
     H1,
-    H2 {
+    H2,
+    li a {
         text-align: center;
+        font-size: 1.75em;
     }
 
     aside {
@@ -244,6 +245,5 @@ input:hover {
         display: inline;
         border: solid none;
         width: 100%;
-        font-size: 1.75em;
     }
 }

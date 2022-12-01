@@ -1,7 +1,9 @@
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <!DOCTYPE html>
-    <html lang="fr">
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/FRONT/STATIQUE/HTML/Jarditou/projet_jarditou/css/style.css">
     <title>Contact</title>
 </head>
@@ -18,7 +20,7 @@
     <nav>
 
         <ul class="nav_liens">
-            <li><a href="../projet_jarditou/index2.html">Accueil</a></li>
+            <li><a href="../projet_jarditou/index.html">Accueil</a></li>
             <li><a href="../projet_jarditou/tableau.html">Tableau</a></li>
             <li><a href="../projet_jarditou/contact.html">Contact</a></li>
         </ul>
@@ -38,7 +40,7 @@
 
         <p>*Ces zones sont obligatoires</p>
 
-        <form id="formulaire">
+        <form action="azerty.php" method="post" id="formulaire">
             <fieldset class="encadrement">
 
                 <legend>Vos coordonnées</legend>
@@ -60,7 +62,7 @@
                 </div>
 
                 <br>
-                <section>
+                <div>
                     <label for="date">Date de naissance:</label><input type="date" name="ddn" id="date">
                     <br>
                     <label for="cp">Code postal*: </label><input type="text" name="code postal" id="cp">
@@ -71,14 +73,14 @@
                     <br>
                     <label for="email">Email*: </label><input type="email" name="email" id="email"
                         placeholder="Contact@exemple.com.">
-                </section>
+                </div>
 
 
             </fieldset>
             <fieldset class="encadrement">
                 <legend>Votre demande</legend>
                 <div>Sujet*:
-                    <label for="sujet" id="sujet"></label>
+                    <label for="sujet"></label>
                     <select id="sujet">
                         <option value="sujet">Veuillez séléctionner un sujet</option>
                         <option value="question">Question sur un produit</option>
@@ -106,7 +108,7 @@
     <footer>
 
         <div id="cgu">
-            <input type="checkbox" name="cgu" value="" id="message">
+            <input type="checkbox" name="cgu" id="message">
             <label>*J'accepte le traitement informatique de ce formulaire</label>
         </div>
 

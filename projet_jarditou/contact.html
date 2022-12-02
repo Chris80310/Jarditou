@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/FRONT/STATIQUE/HTML/Jarditou/projet_jarditou/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Contact</title>
 </head>
 
@@ -33,7 +34,7 @@
 
     <br>
 
-    <section>
+    <section id="section_form">
 
         <h1>Contact</h1>
         <hr>
@@ -44,13 +45,14 @@
             <fieldset class="encadrement">
 
                 <legend>Vos coordonnées</legend>
-                <label for="nom"> Votre nom*: </label><input type="text" name="nom" id="nom">
-                <br class="large" >
-                <label for="prenom">Votre prénom*: </label><input type="text" name="prenom" id="prenom">
+                <label for="nom"> Votre nom*: </label><input type="text" name="nom" id="nom" class="input_cases">
                 <br class="large">
-                <div>
-                    <label>Sexe*</label>
-                    <br class="large">
+                <label for="prenom">Votre prénom*: </label><input type="text" name="prenom" id="prenom" class="input_cases">
+                <br class="large">
+                <label>Sexe*</label>
+                <br class="large">
+
+                <div id="sexe_div">
                     <div>
                         <label for="masculin">Masculin</label>
                         <input type="radio" name="sexe" id="masculin" checked>
@@ -59,20 +61,21 @@
                         <label for="feminin">Féminin</label>
                         <input type="radio" name="sexe" id="feminin">
                     </div>
+                </div>
 
                 </div>
 
                 <br>
-                <div>
-                    <label for="date">Date de naissance:</label><input type="date" name="ddn" id="date">
+                <div id="abc">
+                    <label for="date">Date de naissance:</label><input type="date" name="ddn" id="date" class="input_cases">
                     <br>
-                    <label for="cp">Code postal*: </label><input type="text" name="code postal" id="cp">
+                    <label for="cp">Code postal*: </label><input type="text" name="code postal" id="cp" class="input_cases">
                     <br>
-                    <label for="adresse">Adresse: </label><input type="text" name="adresse" id="adresse">
+                    <label for="adresse">Adresse: </label><input type="text" name="adresse" id="adresse" class="input_cases">
                     <br>
-                    <label for="ville">Ville: </label><input type="text" name="ville" id="ville">
+                    <label for="ville">Ville: </label><input type="text" name="ville" id="ville" class="input_cases">
                     <br>
-                    <label for="email">Email*: </label><input type="email" name="email" id="email"
+                    <label for="email">Email*: </label><input type="email" name="email" id="email" class="input_cases"
                         placeholder="Contact@exemple.com.">
                 </div>
 
